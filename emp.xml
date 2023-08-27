@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee department="ENG">
+      <name id="1">PRANAV</name>
+      <l_name>P</l_name>
+      <dob>08-08-2002</dob>
+      <gender>Male</gender>
+      <position>Web Developer</position>
+      <salary>60000</salary>
+    </employee>
+    <employee category="ENG">
+      <name id="1">LIONEL</name>
+      <l_name>MESSI</l_name>
+      <dob>22-08-2001</dob>
+      <gender>Male</gender>
+      <position>SDE</position>
+      <salary>70000</salary>
+    </employee>
+    <employee category="HR">
+      <name id="1">CRISTIANO</name>
+      <l_name>RONALDO</l_name>
+      <dob>05-07-2002</dob>
+      <gender>male</gender>
+      <position>HR</position>
+      <salary>8000</salary>
+    </employee>
+    <employee category="HK">
+      <name id="1">VIRAT</name>
+      <l_name>KHOLI</l_name>
+      <dob>15-10-2000</dob>
+      <gender>Male</gender>
+      <position>Marketing Lead</position>
+      <salary>4000</salary>
+    </employee>
+</employees>
