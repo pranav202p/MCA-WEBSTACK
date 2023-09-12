@@ -1,82 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+<title>FETCH JSON DATA WITH AJAX</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function fetchBooks() {
+  $.ajax({
+    url: "books.json",
+    dataType: "json",
+    success: function(data) {
+      displayBooks(data);
+    }
+  });
+}
+
+function displayBooks(data) {
+  var bookList = document.getElementById("bookList");
+  bookList.innerHTML = "";
+
+  for (var i in data) {
+    var book = data[i];
+    var bookDiv = document.createElement("div");
+    bookDiv.innerHTML = `
+      <h3>${book.title}</h3>
+      <p>${book.author}</p>
+      <p>${book.genre}</p>
+    `;
+    bookList.appendChild(bookDiv);
+  }
+}
+
+$(document).ready(function() {
+  $("#fetchBooks").click(fetchBooks);
+});
+</script>
 </head>
 <body>
-    
-   <div class="container bg-primary">
-  <form action="/register" method="post" id="form">
-    <div>
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" />
-      <span class="valid"></span>
-      <span class="error"></span>
+    <header>
+        <a href="#" class="logo">WEB STACK LAB 7</a>
+        <ul class="navbar" >
+               
+        </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <h1 align="center">FETCH JSON DATA WITH AJAX</h1>
+  <center><button id="fetchBooks"><b>FETCH BOOKS</b></button></center>
+  <div id="bookList"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="footer" >
+    <h2>WEB STACK LAB 7</h2>
+    <div class="footer-social">
     </div>
-    <div>
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" />
-      <span class="valid"></span>
-      <span class="error"></span>
-    </div>
-    <div>
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" />
-      <span class="valid"></span>
-      <span class="error"></span>
-    </div>
-    <div>
-      <label for="confirm_password">Confirm Password</label>
-      <input type="password" id="confirm_password" name="confirm_password" />
-      <span class="valid"></span>
-      <span class="error"></span>
-    </div>
-    <div>
-      <label for="date_of_birth">Date of Birth</label>
-      <input type="date" id="date_of_birth" name="date_of_birth" />
-      <span class="valid"></span>
-      <span class="error"></span>
-    </div>
-    <button type="submit" id="submit-button">Register</button>
-  </form>
+
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
