@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function fetchBooks() {
+  $.ajax({
+    url: "dogs.json",
+    dataType: "json",
+    success: function(data) {
+      displayBooks(data);
+    }
+  });
+}
+
+function displayBooks(data) {
+  var bookList = document.getElementById("bookList");
+  bookList.innerHTML = "";
+
+  for (var i in data) {
+    var book = data[i];
+    var bookDiv = document.createElement("div");
+    bookDiv.innerHTML = `
+      <h3>BREED:${book.Breed}</h3>
+      <p>COLOR:${book.color}</p>
+      <p>COUNTRY:${book.country}</p>
+    `;
+    bookList.appendChild(bookDiv);
+  }
+}
+
+$(document).ready(function() {
+  $("#fetchBooks").click(fetchBooks);
+});
+</script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul class="navbar" >
+               
+        </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+  <center><button id="fetchBooks"><b>breed list</b></button></center>
+  <div id="bookList"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="footer" >
+    <h2></h2>
+    <div class="footer-social">
+    </div>
+
+</div>
+</body>
+</html>
