@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Shoes",
+      "description": "Shoes that are trendy and light weight",
+      "price": 10.99,
+      "image": "https://source.unsplash.com/random/500x500/?shoes"
+    },
+    {
+      "id": 2,
+      "name": "Perfume",
+      "description": "Embrace your fragrance",
+      "price": 29.99,
+      "image": "https://source.unsplash.com/random/500x500/?perfume"
+    },
+    {
+      "id": 3,
+      "name": "Phone cover",
+      "description": "Quality phone cover.",
+      "price": 49.99,
+      "image": "https://source.unsplash.com/random/500x500/?phonecover"
+    },
+    {
+        "id": 4,
+        "name": "Shirt",
+        "description": "A basic T-shirt in a variety of colors.",
+        "price": 20.99,
+        "image": "https://source.unsplash.com/random/500x500/?shirt"
+      },
+      {
+        "id": 5,
+        "name": "football",
+        "description": "Crafted high quality football",
+        "price": 39.99,
+        "image": "https://source.unsplash.com/random/500x500/?football"
+      },
+      {
+        "id": 6,
+        "name": "watch",
+        "description": "High quality watches",
+        "price": 59.99,
+        "image": "https://source.unsplash.com/random/500x500/?watches"
+      },
+      {
+        "id": 7,
+        "name": "Formals",
+        "description": "A basic T-shirt in a variety of colors.",
+        "price": 70.99,
+        "image": "https://source.unsplash.com/random/500x500/?formals"
+      },
+      {
+        "id": 8,
+        "name": "Baggy Fit Jeans",
+        "description": "A pair of denim jeans.",
+        "price": 12.99,
+        "image": "https://source.unsplash.com/random/500x500/?baggy-fit-jeans"
+      },
+      {
+        "id": 9,
+        "name": "Addidas-Shoes",
+        "description": "A pair of sneakers.",
+        "price": 17.99,
+        "image": "https://source.unsplash.com/random/500x500/?addidas-shoes"
+      }
+      
+  ]
+  
